@@ -21,6 +21,7 @@ def init():
     """
     creation des joueurs
     """
+    return game, player1, player2
 
 def Boat_Obj():
     names:list = []
