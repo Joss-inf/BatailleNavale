@@ -1,0 +1,30 @@
+{
+   "boats":
+    [
+        {
+            "name": "Porte-avions",
+            "length": "5",
+            "num": "2"
+        },
+        {
+            "name": "Croiseur",
+            "length": "4",
+            "num": "2"
+        },
+        {
+            "name": "Contre-torpilleurs",
+             "length": "1",
+            "num": "2"
+        },
+        {
+            "name": "Torpilleur",
+            "length": "1",
+            "num": "2"
+        }
+    ],
+    "game":
+    {
+        "name":"Bataille_Navale",
+        "rows":10
+    }
+}
