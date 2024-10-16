@@ -1,7 +1,6 @@
 import json
 import os
 
-
 current_dir = os.path.dirname(os.path.abspath(__file__))
 """
 Construis le chemin complet vers le fichier JSON
@@ -23,3 +22,7 @@ On charge le Json avec un try et des retours d'erreur
 """
 def GetJsonParse():
     return data
+
+"""
+on fais un get pour obtenir les data quand on exportera la fonction
+"""
