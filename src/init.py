@@ -5,11 +5,6 @@ d = GetJsonParse()
 """
 les data sont importé ici puis mis dans d pour une utilisation plus facile
 """
-def setup():
-    init()
-
-
-
 def init():
     game = c.game_config(d["game"]["name"],d["game"]["rows"])
     """
@@ -20,13 +15,14 @@ def init():
     création de la grille de jeu
     """
     boats = Boat_Obj()
-
     player1 = c.player_config("player1",arena,arena,boats,initScore(boats))
     player2 = player1
     player2.name = "player2"
     """
     creation des joueurs
     """
+    return game, player1, player2
+
 def Boat_Obj():
     names:list = []
     lengths:list = []
@@ -49,4 +45,3 @@ def initScore(b):
     for x, y in zip(b.length, b.number):
         score += x * y
 #calcul du score pour determiner quand est ce que le joueur a perdu
-setup()
