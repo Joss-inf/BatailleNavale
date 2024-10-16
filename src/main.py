@@ -1,9 +1,10 @@
 import config as config
-
+import init as init
 
 
 def gameLoop():
+    init.init()
 
-    ready:int = 0
-    for a in arena:
-        print(' '.join(a))
+while True:
+
+gameLoop()
