@@ -22,7 +22,7 @@ def userInput(type:str,str1:str):
             res =''
             if(type == "float"):
                 res = float(input(str1))
-            if(type == "str"):.
+            if(type == "str"):
                 res = str(input(str1))
             if(type == "int"):
                 res = int(input(str1))
