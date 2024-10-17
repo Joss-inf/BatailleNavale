@@ -43,3 +43,42 @@ def userInput(player,str1: str,L:int,boatL):
             print(f"Invalid input: {e}")
             r.render(player.pMapBase)
             print("Must be a valid input!")
+
+
+def SeconduserInput(player,str1: str,L:int):
+    while True:
+        res = input(str1)
+        try:
+            x1 = res[0].lower()
+            y1 = res[1:]
+            check = True
+            # Validate x1 and x2 as single letters from the alphabet
+            if not (x1.isalpha() and len(x1) == 1):
+                print("x1  must be single letters from the alphabet.")
+                check = False
+            ch:list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
+            if x1 in ch:
+                x1 = ch.index(x1)
+                """
+                ajoute l'index de la lettre si elle existe
+                """
+            elif x1 not in ch:
+                check = False
+            x1 = int(x1)
+            y1 = int(y1)-1
+            if x1 < 0  or y1 < 0 or x1 > L or y1 > L  :
+                check = False
+                """
+                check si l'input est correct
+                """
+            a:list = [x1,y1]
+            if check is True :
+                return a
+            else:
+                r.render(player.pMapBase)
+                print("out of range !")
+        except (ValueError, IndexError) as e:
+            print(f"Invalid input: {e}")
+            r.render(player.pMapBase)
+            print("Must be a valid input!")

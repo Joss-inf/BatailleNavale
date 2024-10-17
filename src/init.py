@@ -10,7 +10,8 @@ def init():
     """
     insertion des paramètres de jeu dans game
     """
-    arena= [["~" for i in range(game.ArenaLen)] for j in range(game.ArenaLen)]
+    arena = [["~" for i in range(game.ArenaLen)] for j in range(game.ArenaLen)]
+    arena1 = [["~" for i in range(game.ArenaLen)] for j in range(game.ArenaLen)]
     """
     création de la grille de jeu
     """
@@ -18,8 +19,10 @@ def init():
     score:int = 0
     for boat in boats:
         score += boat.length*boat.number
-
-    player= c.player_config("player1",arena,arena,boats,score)
+    """
+    calcul du score
+    """
+    player= c.player_config("player1",arena,arena1,boats,score)
     """
     creation du joueur
     """

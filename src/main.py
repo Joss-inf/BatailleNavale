@@ -1,8 +1,8 @@
-import config ,init, command as c
+import menu as m
 
 
 
 def gameLoop():
-    c.command()
+    m.menu()
 
 gameLoop()

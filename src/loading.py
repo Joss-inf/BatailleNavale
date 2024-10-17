@@ -1,6 +1,6 @@
-
 import render as r
 import input as p
+
 
 def LoadShip(player,game):
     txt = "write your coordinate ! format x1 y1 , x2, y2: 0a,0b with the maximum range of the current ship !\n input: "
@@ -14,13 +14,13 @@ def LoadShip(player,game):
                 print("ship: "+boat.name+"  length: "+str(boat.length))
                 res = p.userInput(player,txt,game.ArenaLen,boat.length)
                 a = placeBoat(res,player.pMapBase,boat.length)
+                print(player.pMapAttack)
 
 def placeBoat(res,Map,boatLen):
     x1 = res[0]
     y1 = res[1]
     x2 = res[2]
     y2 = res[3]
-    print(x1,x2,y1,y2)
     if x1 == x2 and abs(y1-y2)+1 ==boatLen:
         """
         verticale
@@ -31,7 +31,7 @@ def placeBoat(res,Map,boatLen):
                 check1 += 1
         if check1 == 0:
             for i  in range(boatLen):
-                Map[i][x1] = 'O'
+                Map[i][x1] = "O"
             return False
         else:
             print("collision")

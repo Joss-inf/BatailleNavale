@@ -1,8 +1,6 @@
-import init
-import loading as l
-import copy
+import copy, init, loading as l, game as g
 
-def command():
+def menu():
     while True:
         txt = "new party : 0, continue :1, record : 2, leaderboard : 3 input: "
         a = userInput(txt)
@@ -18,8 +16,15 @@ def command():
             """
                 chargement de la config des bateaux
             """
+    
             l.LoadShip(player1,game)
             l.LoadShip(player2,game)
+          
+            """
+            lancement du jeu
+            """
+            print("GAME GAME GAME")
+            g.game(player1,player2,game)
 
             if a == 1:
                  #LoadLastGame()
