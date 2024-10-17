@@ -1,4 +1,4 @@
-Deux joueurs s'oppose sur une grille de 10 par10  de A à J et de 1 a 10
+Deux joueurs s'oppose sur une grille de 10 par 10  de A à J et de 1 a 10
 chacun a une flotte composée de quelques bateaux d'une à cinq cases de long.
 
 L'une des grilles représente la zone contenant sa propre flotte. Au début du jeu, chaque joueur place ses bateaux sur sa grille, en s'assurant que deux bateaux ne sont pas adjacents.
@@ -17,6 +17,29 @@ Contre-torpilleurs de 3 de longueur
 Sous-marin de 3 de longueur
 Torpilleur de 2 de longueur
 
-installer : faite un git clone du projet
-utiliser : BatailleNavale->src
-puis faite python3 main.py
+
+installation:
+
+    cloner le depot github: git clone https://github.com/Joss-inf/BatailleNavale.git
+    installer : faite un git clone du projet
+
+acces:
+
+    acceder au repertoire: cd BatailleNavale/src
+
+lancement:
+
+    python3 main.py
+
+Structure du projet:
+
+    src: Contient le code source principal du jeu.
+    data: Contient les fichiers de config/sauvegarde en format json.
+
+Technologies utilisées
+
+    Python: Langage de programmation principal.
+    [Bibliothèques utilisées]: os,json,copy,
+
+Auteur:
+Josselin Bessière
