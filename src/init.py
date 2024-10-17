@@ -14,34 +14,22 @@ def init():
     """
     création de la grille de jeu
     """
-    boats = Boat_Obj()
-    player1 = c.player_config("player1",arena,arena,boats,initScore(boats))
-    player2 = player1
-    player2.name = "player2"
-    """
-    creation des joueurs
-    """
-    return game, player1, player2
-
-def Boat_Obj():
-    names:list = []
-    lengths:list = []
-    nums:list = []
-    """
-    init des list
-    """
-
-    for boat in d['boats']:
-        names.append(boat["name"])
-        lengths.append(int(boat["length"]))
-        nums.append(int(boat["num"]))
-        """
-        itération des bateaux et ajout dans une list puis return en objets dans boat config
-        """
-    return c.boats_config(names,lengths,nums)
-
-def initScore(b):
+    boats = Boat_ObjList()
     score:int = 0
-    for x, y in zip(b.length, b.number):
-        score += x * y
-#calcul du score pour determiner quand est ce que le joueur a perdu
+    for boat in boats:
+        score += boat.length*boat.number
+
+    player= c.player_config("player1",arena,arena,boats,score)
+    """
+    creation du joueur
+    """
+    return game, player
+
+def Boat_ObjList():
+    boats = []
+    for ship in d['boats']:
+        boats.append(c.boats_config(str(ship["name"]),int(ship["length"]),int(ship["num"])))
+        """
+        itération des bateaux puis ajoue dans boat config
+        """
+    return boats
