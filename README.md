@@ -16,3 +16,7 @@ Croiseur de 4 de longueur
 Contre-torpilleurs de 3 de longueur
 Sous-marin de 3 de longueur
 Torpilleur de 2 de longueur
+
+installer : faite un git clone du projet
+utiliser : BatailleNavale->src
+puis faite python3 main.py
