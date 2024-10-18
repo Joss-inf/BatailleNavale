@@ -6,6 +6,10 @@ d = GetJsonParse()
 les data sont importé ici puis mis dans d pour une utilisation plus facile
 """
 def init():
+    """
+    permet d'init les éléments du jeu 
+
+    """
     game = c.game_config(d["game"]["name"],d["game"]["rows"])
     """
     insertion des paramètres de jeu dans game

@@ -1,3 +1,8 @@
+
+### jeux de la bataille navale
+
+# regle
+
 Deux joueurs s'oppose sur une grille de 10 par 10  de A à J et de 1 a 10
 chacun a une flotte composée de quelques bateaux d'une à cinq cases de long.
 
@@ -9,7 +14,7 @@ tout cela sera affiché sur une autre grille si il a touché ou pas avec une cro
 
 celui qui detruit toute la flotte ennemie à gagné
 
-bateaux:
+# bateaux:
 
 Porte-avions de 5 de longueur
 Croiseur de 4 de longueur
@@ -18,28 +23,28 @@ Sous-marin de 3 de longueur
 Torpilleur de 2 de longueur
 
 
-installation:
+# installation:
 
     cloner le depot github: git clone https://github.com/Joss-inf/BatailleNavale.git
     installer : faite un git clone du projet
 
-acces:
+# acces:
 
     acceder au repertoire: cd BatailleNavale/src
 
-lancement:
+ # lancement:
 
     python3 main.py
 
-Structure du projet:
+ # Structure du projet:
 
     src: Contient le code source principal du jeu.
     data: Contient les fichiers de config/sauvegarde en format json.
 
-Technologies utilisées
+# Technologies utilisées
 
     Python: Langage de programmation principal.
     [Bibliothèques utilisées]: os,json,copy,
 
-Auteur:
+# Auteur:
 Josselin Bessière

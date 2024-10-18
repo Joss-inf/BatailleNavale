@@ -16,10 +16,9 @@ def menu():
             """
                 chargement de la config des bateaux
             """
-    
             l.LoadShip(player1,game)
             l.LoadShip(player2,game)
-          
+
             """
             lancement du jeu
             """

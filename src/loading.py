@@ -3,6 +3,9 @@ import input as p
 
 
 def LoadShip(player,game):
+    """
+    on charge les bateaux
+    """
     txt = "write your coordinate ! format x1 y1 , x2, y2: 0a,0b with the maximum range of the current ship !\n input: "
     for boat in player.boats:
         num:int = boat.number
@@ -17,6 +20,9 @@ def LoadShip(player,game):
                 print(player.pMapAttack)
 
 def placeBoat(res,Map,boatLen):
+    """
+    on place les bateaux a l'aide de coordonnée
+    """
     x1 = res[0]
     y1 = res[1]
     x2 = res[2]

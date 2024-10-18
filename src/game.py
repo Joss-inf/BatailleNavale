@@ -2,6 +2,9 @@ import render as r
 import input as p
 
 def game(p1,p2,game):
+    """
+    la fonction permet de determiner qui attaque , si le joueur a touché  , a l'eau ou gagné
+    """
     turn:int = 0
     while True:
         if turn == 0:
@@ -18,11 +21,17 @@ def game(p1,p2,game):
                 res = p.SeconduserInput(p1,txt,game.ArenaLen)
                 x:int = res[0]
                 y:int = res[1]
+                """
+                on verifie si  la case est pas deja overwrite
+                """
                 if p1.pMapAttack[y][x] != "x"and p1.pMapAttack[y][x] != "X" :
                     break
                 else:
                     print("coordinate already used")
             if p2.pMapBase[y][x] != "~":
+                """
+                on modifie chaque tableau pour montrer que on a touché
+                """
                 p2.score -= 1
                 p2.pMapBase[y][x] ="X"
                 p1.pMapAttack[y][x] = "X"

@@ -1,5 +1,8 @@
 import render as r
 def userInput(player,str1: str,L:int,boatL):
+    """
+    ici on gère certain inputs complexes 
+    """
     while True:
         res = input(str1)
         try:
@@ -46,6 +49,9 @@ def userInput(player,str1: str,L:int,boatL):
 
 
 def SeconduserInput(player,str1: str,L:int):
+    """
+    ici on gere des inputs + simple
+    """
     while True:
         res = input(str1)
         try:
