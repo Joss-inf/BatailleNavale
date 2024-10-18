@@ -34,7 +34,9 @@ def menu():
             if a == 3:
                 i = 1
                 #LoadLeaderBoard()
-
+"""
+O(n)+input
+"""
 
 def userInput(str1: str):
     """

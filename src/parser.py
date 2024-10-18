@@ -24,3 +24,5 @@ def GetJsonParse():
 """
 on fais un get pour obtenir les data quand on exportera la fonction
 """
+
+"O(n)"

@@ -40,3 +40,7 @@ def Boat_ObjList():
         itération des bateaux puis ajoue dans boat config
         """
     return boats
+
+"""
+O(n)+O(n²)+O(n²)
+"""

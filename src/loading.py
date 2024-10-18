@@ -18,6 +18,9 @@ def LoadShip(player,game):
                 res = p.userInput(player,txt,game.ArenaLen,boat.length)
                 a = placeBoat(res,player.pMapBase,boat.length)
                 print(player.pMapAttack)
+"""
+O(n au cube)
+"""
 
 def placeBoat(res,Map,boatLen):
     """
@@ -61,6 +64,9 @@ def placeBoat(res,Map,boatLen):
             print("coordonnées invalide ! colonne ou ligne")
             return True
 
+"""
+O(n²)+O(n²)
+"""
 def CheckCoordinate(x1,y1,x2,y2,tab):
     e = "~"
     """

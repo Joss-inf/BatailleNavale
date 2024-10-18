@@ -1,6 +1,4 @@
 def render(scene):
-
-
     letters:str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ  "
     print("   "+"   ".join(letters[:len(scene)]))
     for i, p in enumerate(scene, 1):
@@ -18,3 +16,6 @@ def render(scene):
             i = "0"+str(i)
         print(f"{i}| {' | '.join(p)} |")
     print(separator)
+"""
+O(n)
+"""

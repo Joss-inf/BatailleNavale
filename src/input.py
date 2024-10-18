@@ -1,7 +1,7 @@
 import render as r
 def userInput(player,str1: str,L:int,boatL):
     """
-    ici on gère certain inputs complexes 
+    ici on gère certain inputs complexes
     """
     while True:
         res = input(str1)
@@ -47,6 +47,9 @@ def userInput(player,str1: str,L:int,boatL):
             r.render(player.pMapBase)
             print("Must be a valid input!")
 
+"""
+O(n)+render
+"""
 
 def SeconduserInput(player,str1: str,L:int):
     """
@@ -88,3 +91,7 @@ def SeconduserInput(player,str1: str,L:int):
             print(f"Invalid input: {e}")
             r.render(player.pMapBase)
             print("Must be a valid input!")
+
+"""
+O(n)+render
+"""

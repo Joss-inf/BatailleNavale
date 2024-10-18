@@ -73,3 +73,7 @@ def game(p1,p2,game):
                 p2.pMapAttack[y][x] ="x"
                 print("player 2 in the water")
             turn -=1
+
+            """
+            O(n²)+O(n²)+render
+            """
